@@ -1,0 +1,22 @@
+body {
+  background-image: url("../images/bg.png");
+}
+
+#logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#logo a {
+  color: #fff;
+  font-size: 2em;
+  margin: 0px;
+}
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.main-content {
+  margin-top: 40px;
+}
