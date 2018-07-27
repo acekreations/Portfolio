@@ -1,22 +1,80 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-image: url("../images/bg.png");
+  margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #62a8a4;
+}
+
+.btn-primary {
+  background-color: #62a8a4;
+  border: 1px solid #62a8a4;
+}
+
+.btn-primary:hover {
+  background-color: #666;
+  border: 1px solid #666;
 }
 
 #logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #62a8a4;
 }
 #logo a {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.7em;
   margin: 0px;
 }
 
 .navbar {
   padding-top: 0px;
   padding-bottom: 0px;
+  background-color: #fff;
+}
+
+.nav-item {
+  border-right: 1px solid #cccccc;
+}
+
+.nav-item:last-child {
+  border-right: 0px solid #fff;
+}
+
+.nav-link {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .main-content {
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.jumbotron {
+  background-color: #fff;
+}
+
+.profile-img {
+  max-width: 200px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #666666;
+  border-top: 8px solid #62a8a4;
+}
+
+.footer p {
+  padding: 18px;
+  margin: 0px;
+  color: #fff;
 }
