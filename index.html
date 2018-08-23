@@ -20,14 +20,14 @@
   <body>
     <div id="landing-container" class="text-center">
       <div id="bio" class="mb-3">
-        <img id="profile-image" src="assets/images/profile.jpg" alt="Profile Image">
-        <h1 id="name-title" class="my-4">Craig Melville</h1>
-        <p id="bio-text">Fullstack developer with a love for Node, Bootstrap, and design.</p>
+        <img id="profile-image" class="animated fadeInDown faster" src="assets/images/profile.jpg" alt="Profile Image">
+        <h1 id="name-title" class="my-4 animated fadeInUp faster">Craig Melville</h1>
+        <p id="bio-text" class="animated fadeIn">Fullstack developer with a love for Node, Bootstrap, and design.</p>
       </div>
 
       <div id="skills">
-        <h2>Skills</h2>
-        <div id="skill-icons">
+        <h2 class="animated fadeIn">Skills</h2>
+        <div id="skill-icons" class="animated zoomIn faster">
           <i class="fab fa-node fa-4x" data-toggle="tooltip" data-placement="top" title="node.js"></i>
           <i class="fab fa-js fa-4x" data-toggle="tooltip" data-placement="top" title="Javascript"></i>
           <i class="fab fa-html5 fa-4x" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
@@ -35,10 +35,11 @@
         </div>
       </div>
 
-      <i id="down-arrow" class="fas fa-caret-down fa-2x animated"></i>
+      <i id="down-arrow" class="fas fa-caret-down fa-2x animated fadeInUp faster"></i>
     </div>
 
     <div id="projects-container" class="text-center">
+      <h2 class="alt-text mt-5">Projects</h2>
       <div class="project">
         <a href="https://www.github.com" target="_blank"><img src="https://via.placeholder.com/700x400" class="project-image animated zoomIn" alt=""></a>
         <div class="project-icons">
@@ -49,7 +50,7 @@
     </div>
 
     <footer>
-
+      <p class="m-0">&copy;2018 Craig Melville</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -51,7 +51,7 @@ body {
 }
 
 .project {
-  margin: 70px auto;
+  margin: 50px auto;
   max-width: 750px;
   display: flex;
   align-items: center;
@@ -74,6 +74,9 @@ body {
 footer {
   width: 100vw;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3023ae+0,c86dd7+100 */
   background: rgb(48,35,174); /* Old browsers */
   background: -moz-linear-gradient(-45deg,  rgba(48,35,174,1) 0%, rgba(200,109,215,1) 100%); /* FF3.6-15 */
