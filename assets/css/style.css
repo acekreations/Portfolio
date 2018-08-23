@@ -90,6 +90,10 @@ footer {
     flex-direction: column;
   }
 
+  .project-image {
+    border-radius: 0px;
+  }
+
   .project-icons {
     flex-direction: row;
   }
