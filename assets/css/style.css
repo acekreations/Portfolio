@@ -45,6 +45,26 @@ body {
   margin: 10px;
 }
 
+.fa-node, .fa-js, .fa-html5, .fa-css3-alt {
+  transition: all 0.3s;
+}
+
+.fa-node:hover {
+  color: #76d43d;
+}
+
+.fa-js:hover {
+  color: #ffe433;
+}
+
+.fa-html5:hover {
+  color: #ff891c;
+}
+
+.fa-css3-alt:hover {
+  color: #309cff;
+}
+
 #down-arrow {
   position: absolute;
   bottom: 20px;
