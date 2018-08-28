@@ -3,6 +3,16 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .alt-text {
   color: #66666E;
 }
@@ -70,8 +80,16 @@ body {
   bottom: 20px;
 }
 
+#projects-container {
+
+}
+
+#projects-container .card {
+  margin: 20px auto;
+}
+
 .project {
-  margin: 50px auto;
+  margin: 100px auto;
   max-width: 750px;
   display: flex;
   align-items: center;
@@ -89,6 +107,14 @@ body {
 
 .project-icons i {
   margin: 10px;
+}
+
+.project-title {
+  position: relative;
+  bottom: 50px;
+  margin-right: 15px;
+  text-align: right;
+  text-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 footer {
