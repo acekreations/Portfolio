@@ -2,7 +2,7 @@
 
 Created a responsive portfolio website utilizing Bootstrap.
 
-[Live Website](https://acekreations.github.io/Bootstrap-Portfolio/)
+[Live Website](https://acekreations.github.io/Portfolio/)
 
 ![Website Screenshot](assets/images/screenshot.png)
 
