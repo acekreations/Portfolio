@@ -1,4 +1,4 @@
-# Bootstrap Portfolio Project
+# Portfolio Project
 
 Created a responsive portfolio website utilizing Bootstrap.
 
@@ -10,6 +10,7 @@ Created a responsive portfolio website utilizing Bootstrap.
 - HTML
 - CSS
 - Bootstrap 4
+- animate.css
 
 ## Learning Points
 - Learned how to implement and use Bootstrap
