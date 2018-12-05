@@ -1,28 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Home from "./Pages/Home";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    state = {
+        bg: "home.mp4"
+    };
+
+    changeBG = newBG =>
+        this.setState({
+            bg: newBG
+        });
+
+    render() {
+        return (
+            <Router>
+                <div className="uk-cover-container uk-height-viewport">
+                    <video autoPlay loop muted playsInline uk-cover="true">
+                        <source
+                            src={"./assets/" + this.state.bg}
+                            type="video/mp4"
+                        />
+                    </video>
+                    <Switch>
+                        <Route
+                            exact
+                            path="/"
+                            render={() => <Home changeBG={this.changeBG} />}
+                        />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;
