@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 
 class Home extends Component {
-    componentWillMount() {
-        this.props.changeBG("home.mp4");
-    }
-
     componentDidMount() {
         this.spinCycle();
     }
@@ -28,7 +24,7 @@ class Home extends Component {
             }, time);
         } else {
             container.innerHTML =
-                "<h2 class='animated fadeInDown' style='animation-delay:1s'>Full Stack Developer</h2>";
+                "<h2 class='animated flipInX faster' style='animation-delay:0.4s'>Full Stack Developer</h2>";
         }
     };
 
@@ -56,10 +52,18 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="cover uk-panel uk-flex">
-                <NavBar />
-                <div className="uk-container uk-container-expand uk-flex uk-flex-center uk-flex-middle">
-                    <div id="spinCylcle" />
+            <div className="uk-cover-container uk-height-viewport">
+                <video autoPlay loop muted playsInline uk-cover="true">
+                    <source src={"./assets/home.mp4"} type="video/mp4" />
+                </video>
+                <div
+                    className="cover uk-panel uk-flex"
+                    uk-parallax="background-color: #7244ca, #7244ca;"
+                >
+                    <NavBar />
+                    <div className="uk-container uk-container-expand uk-flex uk-flex-center uk-flex-middle">
+                        <div id="spinCylcle" />
+                    </div>
                 </div>
             </div>
         );

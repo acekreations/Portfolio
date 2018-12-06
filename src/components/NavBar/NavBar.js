@@ -10,9 +10,11 @@ class NavBar extends Component {
                     uk-navbar="true"
                 >
                     <div className="uk-navbar-left">
-                        <h1 id="logo" className="uk-margin-remove-bottom">
-                            Craig Melville
-                        </h1>
+                        <Link to="/">
+                            <h1 id="logo" className="uk-margin-remove-bottom">
+                                Craig Melville
+                            </h1>
+                        </Link>
                     </div>
                     <div className="uk-navbar-right">
                         <button
@@ -20,20 +22,20 @@ class NavBar extends Component {
                             uk-toggle="target: #offCanvas"
                             type="button"
                         >
-                            <span uk-icon="menu" />
+                            <span
+                                uk-icon="icon: menu; ratio: 1.5"
+                                className="menuIcon"
+                            />
                         </button>
-                        <ul
-                            className="uk-navbar-nav uk-visible@s"
-                            id="nav-menu"
-                        >
+                        <ul className="uk-navbar-nav uk-visible@s nav-menu">
                             <li>
-                                <Link to="/">Portfolio</Link>
+                                <Link to="/portfolio">Portfolio</Link>
                             </li>
                             <li>
-                                <Link to="/">About</Link>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <Link to="/">Contact</Link>
+                                <Link to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -46,15 +48,17 @@ class NavBar extends Component {
                             uk-close="true"
                         />
 
-                        <h3>Title</h3>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                        </p>
+                        <ul className="uk-list nav-menu">
+                            <li>
+                                <Link to="/portfolio">Portfolio</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
