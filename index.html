@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/main.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/glitch.css"
+        />
+        <link rel="stylesheet" href="css/hover-min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="bodyContainer">
+                <h1
+                    id="logo"
+                    class="animated rotateInDownRight faster delay-1s"
+                >
+                    Craig Melville<br />
+                </h1>
+                <p
+                    id="tagLine"
+                    class="glitch animated fadeIn delay-2s"
+                    data-text="Front-End Dev"
+                >
+                    Front-End Dev
+                </p>
+                <!-- <h2
+                    id="tagLine"
+                    class="glitch animated fadeIn delay-2s"
+                    data-text="Front-End Dev"
+                >
+                    Front-End Dev
+                </h2> -->
+                <div id="portfolioContainer">
+                    <!-- <ul id="portfolioMenu" class="animated">
+                        <li
+                            data-name="Newsallo"
+                            data-type="Personal"
+                            data-role="Tech lead, designer"
+                            data-description="words that descript things I do go here to help me get a job."
+                            data-tech="React, Node, Postgres"
+                        >
+                            <div><p>- Newsallo -</p></div>
+                        </li>
+                        <li>
+                            <div><p>- Order Maestro -</p></div>
+                        </li>
+                        <li>
+                            <div><p>- Adam Hunter Inc. -</p></div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Newsallo -</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Order Maestro -</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Adam Hunter Inc. -</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Newsallo -</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Order Maestro -</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>- Adam Hunter Inc. -</p>
+                            </div>
+                        </li>
+                    </ul> -->
+                    <div id="portfolioContent">
+                        <div id="projectContent">
+                            <div class="projectInfo">
+                                <h1 id="projectName">Newsallo</h1>
+                                <p>
+                                    <i
+                                        id="projectGithub"
+                                        class="fab fa-github"
+                                    ></i>
+                                    View Source
+                                    <i id="projectLink" class="fas fa-link"></i>
+                                    View Site
+                                </p>
+                                <p id="projectDescription">
+                                    Vestibulum id ligula porta felis euismod
+                                    semper. Fusce dapibus, tellus ac cursus
+                                    commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus. Sed
+                                    posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                            <div class="projectImg">
+                                <img
+                                    id="projectImage"
+                                    src="images/portfolio/newsallo.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <!-- <p><i class="fas fa-eye-slash"></i>Source Private</p> -->
+
+                        <ul id="portfolioMenu">
+                            <li
+                                class="selected"
+                                data-name="Newsallo"
+                                data-github="htts://www.github.com"
+                                data-link="https://www.newsallo.com"
+                                data-description="Vestibulum id ligula porta felis euismod
+                                    semper. Fusce dapibus, tellus ac cursus
+                                    commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus. Sed
+                                    posuere consectetur est at lobortis."
+                                data-image="newsallo.png"
+                            >
+                                Newsallo
+                            </li>
+                            <li
+                                class=""
+                                data-name="Adam Hunter Inc."
+                                data-github="htts://www.github.com"
+                                data-link="https://www.adamhunterinc.com"
+                                data-description="Vestibulum id ligula porta felis euismod
+                                    semper. Fusce dapibus, tellus ac cursus
+                                    commodo, tortor mauris condimentum nibh, ut
+                                    fermentum massa justo sit amet risus. Sed
+                                    posuere consectetur est at lobortis."
+                                data-image="newsallo.png"
+                            >
+                                Adam Hunter Inc.
+                            </li>
+                            <li>Aegis Custody</li>
+                            <li>Order Maestro</li>
+                            <li>Crystal Miner</li>
+                            <li>JukeLab</li>
+                            <li>Startup News</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <img
+                id="landscape"
+                class="animated slideInUp"
+                src="images/landscape.svg"
+                alt="landscape"
+            />
+
+            <div id="menu" class="animated rotateInUpLeft faster delay-1s">
+                <img
+                    id="portfolioBtn"
+                    class="hvr-bob"
+                    src="images/portfolio.svg"
+                    alt="portfolio"
+                />
+                <img class="hvr-bob" src="images/about.svg" alt="portfolio" />
+                <img class="hvr-bob" src="images/contact.svg" alt="portfolio" />
+            </div>
+
+            <div id="canvasContainer">
+                <canvas id="meteorCanvas" class="animated fadeIn"></canvas>
+                <div id="starCanvas" class="animated fadeIn"></div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.2/chroma.min.js"></script>
+        <script src="src/main.js"></script>
+        <script src="src/background.js"></script>
+    </body>
+</html>
