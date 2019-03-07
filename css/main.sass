@@ -96,7 +96,7 @@ a
     #logo
         margin: 30px auto 0px auto
         padding-bottom: 8px
-        max-width: 400px
+        max-width: 450px
         z-index: 3
         font-family: furore, Helvetica, sans-serif
         font-size: 2.8em
@@ -122,115 +122,46 @@ a
             font-size: 0.6em
     
 #portfolioContainer
-    height: calc(100% - 200px)
-    max-width: 100%
+    // height: calc(100% - 200px)
+    height: 90%
+    width: 90%
+    margin: auto
     display: none
     justify-content: center
     align-items: center
-    margin: 0px 40px
 
+    @media screen and (max-width: 485px)
+            height: 80%
 
-    //     li
-    //         z-index: 3
-    //         display: flex
-    //         justify-content: center
-    //         align-items: center
-    //         text-align: center
-    //         transition: all 0.2s
-    //         opacity: 0
-
-    //         &:nth-child(6n+4), &:nth-child(6n+5), &:nth-child(6n+6)
-    //             margin-top: -15px
-    //             margin-bottom: -15px
-
-    //         &:nth-child(6n+3)
-    //             margin-right: auto
-
-    //         &:nth-child(6n+4)
-    //             margin-left: 50px
-
-    //         div
-    //             overflow: hidden
-    //             width: 100px
-    //             height: 100px
-    //             position: relative
-    //             display: flex
-    //             align-items: center
-    //             justify-content: center
-    //             cursor: pointer
-
-    //             &:before
-    //                 content: ""
-    //                 background-image: url("../images/portfolio-bg.svg")
-    //                 background-repeat: no-repeat
-    //                 background-size: auto 100%
-    //                 background-position: center
-    //                 width: 100px
-    //                 height: 100px
-    //                 position: absolute
-    //                 top: 0px
-    //                 left: 0px
-    //                 z-index: -1
-    //                 transition: all 0.3s
-    //                 display: flex
-    //                 align-items: center
-
-    //             &:hover:before
-    //                 transform: rotate(30deg)
-
-            // p
-            //     font-size: 14px
-            //     color: #3C3450
-            //     font-family: furore, Helvetica, sans-serif
-            //     margin: 0px 12px
-            //     text-align: center
-            //     z-index: 3
     
     #portfolioContent
         width: 100%
         height: 85%
-        // margin-left: auto
-        // position: relative
         z-index: 3
-        // background-color: rgba(246,216,174,0.2)
-        // background-color: rgba(255,255,255,0.6)
-        background-color: rgba(94,214,210,0.2)
-        border: 2px solid rgba(94,214,210,0.2)
-        // border-top: 2px solid rgba(86,200,204,0.2)
-        // border-bottom: 2px solid rgba(86,200,204,0.2)
-        // box-shadow: 0px 0px 100px rgba(246,216,174,0.1)
-        box-shadow: 0px 0px 100px rgba(94,214,210,0.3)
-        // background-image: url("../images/grid.svg")
-        background-position: center
-        background-image: url("../images/lines-pattern-20-01.svg")
-        background-size: 8px 8px
-        border-radius: 15px
         display: flex
         flex-direction: column
-        animation: flash 300ms
-
-        @media screen and (max-width: 485px)
-            height: 90%
 
         #projectContent
             display: flex
             height: 100%
 
             .projectInfo
-                color: rgba(255,255,255,0.9)
-                max-width: 60%
+                width: 60%
                 margin: 30px 30px 0px 30px
-                font-family: 'Roboto Mono', monospace
-                text-shadow: 0px 0px 10px rgba(94,214,210,0.5)
+                
 
                 @media screen and (max-width: 850px)
                     max-width: 100%
                     font-size: 0.8em
                     margin-left: 15px
                     margin-right: 15px
+                    width: 100%
 
                 h1
                     margin-top: 0px
+
+                    @media screen and (max-width: 485px)
+                        font-size: 1.5em
 
                 #projectLink
                     margin-left: 10px
@@ -309,3 +240,61 @@ a
 
             .selected
                 border-bottom: 2px solid rgba(94,214,210,0.9) 
+
+#aboutContainer
+    display: none
+    flex-direction: column
+    z-index: 3
+    max-width: 50%
+    margin: auto
+    padding: 30px
+    box-sizing: border-box
+
+    h1
+        margin: 0px
+
+    p
+        font-size: 0.9em
+
+    @media screen and (max-width: 1000px)
+        max-width: 60%
+    @media screen and (max-width: 800px)
+        max-width: 90%
+        padding: 20px
+        font-size: 0.8em
+
+#contactContainer
+    display: none
+    z-index: 3
+    margin: auto
+    padding: 30px
+    box-sizing: border-box
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+    h1
+        margin-top: 0px
+    
+
+.sciFiScreen
+    background-color: rgba(94,214,210,0.2)
+    border: 2px solid rgba(94,214,210,0.2)
+    box-shadow: 0px 0px 100px rgba(94,214,210,0.3)
+    background-position: center
+    background-image: url("../images/lines-pattern.svg")
+    background-size: 8px 8px
+    border-radius: 15px
+    animation: flash 300ms
+    z-index: 3
+
+    p
+        font-family: 'Roboto Mono', monospace
+        text-shadow: 0px 0px 10px rgba(94,214,210,0.5)
+        color: rgba(255,255,255,0.9)
+
+#bottomSpacer
+    height: 120px
+
+    @media screen and (max-width: 485px)
+            height: 70px
