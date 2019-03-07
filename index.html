@@ -29,7 +29,7 @@
             crossorigin="anonymous"
         />
         <link
-            href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700"
             rel="stylesheet"
         />
     </head>
@@ -109,13 +109,33 @@
                             <div class="projectInfo">
                                 <h1 id="projectName">Newsallo</h1>
                                 <p>
-                                    <i
+                                    <a
+                                        href=""
                                         id="projectGithub"
-                                        class="fab fa-github"
-                                    ></i>
-                                    View Source
-                                    <i id="projectLink" class="fas fa-link"></i>
-                                    View Site
+                                        target="_blank"
+                                    >
+                                        <i
+                                            id="projectGithubIcon"
+                                            class="fab fa-github"
+                                        ></i>
+                                        View Source
+                                    </a>
+                                    <a href="" id="projectLink" target="_blank">
+                                        <i class="fas fa-link"></i>
+                                        View Site
+                                    </a>
+                                </p>
+                                <p>
+                                    <strong>Role: </strong>
+                                    <span id="projectRole"
+                                        >Designer, Full Stack Developer</span
+                                    >
+                                </p>
+                                <p>
+                                    <strong>Tech: </strong
+                                    ><span id="projectTech"
+                                        >React, Node, Postgres, NewsAPI.org
+                                    </span>
                                 </p>
                                 <p id="projectDescription">
                                     Vestibulum id ligula porta felis euismod
@@ -133,19 +153,27 @@
                                 />
                             </div>
                         </div>
-                        <!-- <p><i class="fas fa-eye-slash"></i>Source Private</p> -->
+
+                        <div id="portfolioArrowNav">
+                            <i
+                                id="portfolioArrowBackward"
+                                class="far fa-arrow-alt-circle-left"
+                            ></i>
+                            <i
+                                id="portfolioArrowForward"
+                                class="far fa-arrow-alt-circle-right"
+                            ></i>
+                        </div>
 
                         <ul id="portfolioMenu">
                             <li
                                 class="selected"
                                 data-name="Newsallo"
-                                data-github="htts://www.github.com"
-                                data-link="https://www.newsallo.com"
-                                data-description="Vestibulum id ligula porta felis euismod
-                                    semper. Fusce dapibus, tellus ac cursus
-                                    commodo, tortor mauris condimentum nibh, ut
-                                    fermentum massa justo sit amet risus. Sed
-                                    posuere consectetur est at lobortis."
+                                data-github="https://github.com/acekreations/newsallo"
+                                data-link="https://www.newsallo.com/"
+                                data-role="Designer, Full Stack Developer"
+                                data-tech="React, Node, Postgres, NewsAPI.org"
+                                data-description="Newsallo is a platform that brings all of your favorite news sources into one beautiful and easy to read feed."
                                 data-image="newsallo.png"
                             >
                                 Newsallo
@@ -153,22 +181,75 @@
                             <li
                                 class=""
                                 data-name="Adam Hunter Inc."
-                                data-github="htts://www.github.com"
+                                data-github=""
                                 data-link="https://www.adamhunterinc.com"
-                                data-description="Vestibulum id ligula porta felis euismod
-                                    semper. Fusce dapibus, tellus ac cursus
-                                    commodo, tortor mauris condimentum nibh, ut
-                                    fermentum massa justo sit amet risus. Sed
-                                    posuere consectetur est at lobortis."
-                                data-image="newsallo.png"
+                                data-role="Front-End Developer"
+                                data-tech="React"
+                                data-description="Interior design portfolio for Adam Hunter Inc."
+                                data-image="ah.png"
                             >
                                 Adam Hunter Inc.
                             </li>
-                            <li>Aegis Custody</li>
-                            <li>Order Maestro</li>
-                            <li>Crystal Miner</li>
-                            <li>JukeLab</li>
-                            <li>Startup News</li>
+                            <li
+                                class=""
+                                data-name="Aegis Custody"
+                                data-github=""
+                                data-link="https://www.aegiscustody.com/"
+                                data-role="Front-End Developer"
+                                data-tech="React"
+                                data-description="Corprate website for digital asset custody company Aegis Custody."
+                                data-image="aegis.png"
+                            >
+                                Aegis Custody
+                            </li>
+                            <li
+                                class=""
+                                data-name="Order Maestro"
+                                data-github="https://github.com/acekreations/Order-Maestro"
+                                data-link="https://order-maestro-123.herokuapp.com/"
+                                data-role="Full Stack Developer"
+                                data-tech="jQuery, Bootstrap, Node, MySQL"
+                                data-description="A restaurant order management app designed specifically for use on tablets."
+                                data-image="order-maestro.png"
+                            >
+                                Order Maestro
+                            </li>
+                            <li
+                                class=""
+                                data-name="Crystal Miner"
+                                data-github="https://github.com/acekreations/Crystal-Miner"
+                                data-link="https://acekreations.github.io/Crystal-Miner/"
+                                data-role="Front-End Developer"
+                                data-tech="HTML, CSS, Javascript/jQuery, Bootstrap"
+                                data-description="A game of chance, memory, and math."
+                                data-image="crystal-miner.png"
+                            >
+                                Crystal Miner
+                            </li>
+                            <li
+                                class=""
+                                data-name="JukeLab"
+                                data-github="https://github.com/aehaq/JukeLab"
+                                data-link="https://aehaq.github.io/JukeLab/"
+                                data-role="Front-End Developer, Designer"
+                                data-tech="jQuery, UIkit, Firebase"
+                                data-description="Create a collaborative dynamic music playlist for your get together or party."
+                                data-image="jukelab.png"
+                            >
+                                JukeLab
+                            </li>
+                            <li
+                                class=""
+                                data-name="Startup News"
+                                data-github="https://github.com/acekreations/news-scraper"
+                                data-link="https://startup-news-scraper.herokuapp.com/"
+                                data-role="Full Stack Developer"
+                                data-tech="Handlebars, Milligram, Node, Cheerio, MongoDB"
+                                data-description="Startup News Scraper pulls in(by scraping) all of the newest and hottest startup news from Tech Crunch."
+                                data-image="startup-news.png"
+                            >
+                                Startup News
+                            </li>
                         </ul>
                     </div>
                 </div>

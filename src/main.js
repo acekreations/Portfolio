@@ -3,7 +3,12 @@ const portfolioBtn = document.getElementById("portfolioBtn");
 const portfolioContainer = document.getElementById("portfolioContainer");
 const projectInfo = document.getElementById("projectInfo");
 const portfolioMenuItems = portfolioMenu.querySelectorAll("li");
+const portfolioArrowForward = document.getElementById("portfolioArrowForward");
+const portfolioArrowBackward = document.getElementById(
+    "portfolioArrowBackward"
+);
 let portfolioOpen;
+let currentProjectKey = 0;
 
 portfolioBtn.addEventListener("click", function(e) {
     e.preventDefault();
@@ -12,29 +17,70 @@ portfolioBtn.addEventListener("click", function(e) {
         closePortfolio();
     } else {
         portfolioContainer.style.display = "flex";
-        // portfolioDisplay.classList.add("animated", "flash", "faster");
         portfolioOpen = true;
+
+        //load first project
+        getProjectData(portfolioMenuItems[0]);
     }
 });
 
-portfolioMenuItems.forEach(function(elem) {
+portfolioMenuItems.forEach(function(elem, key) {
+    elem.dataset.key = key;
     elem.addEventListener("click", function() {
-        const name = this.dataset.name;
-        const github = this.dataset.github;
-        const link = this.dataset.link;
-        const description = this.dataset.description;
-        const image = this.dataset.image;
-        displayProject(name, github, link, description, image);
-        selectedProjectUnderline(this);
+        getProjectData(this);
     });
 });
 
-function displayProject(name, github, link, description, image) {
+portfolioArrowForward.addEventListener("click", function() {
+    if (currentProjectKey < portfolioMenuItems.length - 1) {
+        const key = parseInt(currentProjectKey) + 1;
+        getProjectData(portfolioMenuItems[key]);
+    } else {
+        getProjectData(portfolioMenuItems[0]);
+    }
+});
+portfolioArrowBackward.addEventListener("click", function() {
+    if (currentProjectKey > 0) {
+        const key = parseInt(currentProjectKey) - 1;
+        getProjectData(portfolioMenuItems[key]);
+    } else {
+        getProjectData(portfolioMenuItems[portfolioMenuItems.length - 1]);
+    }
+});
+
+function getProjectData(elem) {
+    const name = elem.dataset.name;
+    const github = elem.dataset.github;
+    const link = elem.dataset.link;
+    const role = elem.dataset.role;
+    const tech = elem.dataset.tech;
+    const description = elem.dataset.description;
+    const image = elem.dataset.image;
+    displayProject(name, github, link, role, tech, description, image);
+    selectedProjectUnderline(elem);
+
+    //set project key
+    const key = elem.dataset.key;
+    currentProjectKey = key;
+}
+
+function displayProject(name, github, link, role, tech, description, image) {
     document.getElementById("projectName").textContent = name;
-    document.getElementById("projectGithub").href = github;
     document.getElementById("projectLink").href = link;
+    document.getElementById("projectRole").textContent = role;
+    document.getElementById("projectTech").textContent = tech;
     document.getElementById("projectDescription").textContent = description;
-    document.getElementById("projectImage").textContent = image;
+    document.getElementById("projectImage").src = "/images/portfolio/" + image;
+
+    const projectGithub = document.getElementById("projectGithub");
+    if (github.length <= 0) {
+        projectGithub.href = "";
+        projectGithub.innerHTML =
+            "<i class='fas fa-eye-slash'></i> Source Private";
+    } else {
+        projectGithub.href = github;
+        projectGithub.innerHTML = "<i class='fab fa-github'></i> View Source";
+    }
 }
 
 function selectedProjectUnderline(clickeElem) {
