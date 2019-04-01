@@ -9,6 +9,11 @@ const portfolioArrowBackward = document.getElementById(
 );
 let currentProjectKey = 0;
 
+//remove portfolio animation meant only for when landing on site
+setTimeout(function() {
+    portfolioContainer.classList.remove("animated", "fadeIn", "delay-1s");
+}, 2000);
+
 portfolioBtn.addEventListener("click", function(e) {
     e.preventDefault();
 
