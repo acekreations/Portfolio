@@ -25,12 +25,13 @@ portfolioBtn.addEventListener("click", function(e) {
     getProjectData(portfolioMenuItems[0]);
 });
 
-portfolioMenuItems.forEach(function(elem, key) {
+for (let key = 0; key < portfolioMenuItems.length; key++) {
+    const elem = portfolioMenuItems[key];
     elem.dataset.key = key;
     elem.addEventListener("click", function() {
         getProjectData(this);
     });
-});
+}
 
 portfolioArrowForward.addEventListener("click", function() {
     if (currentProjectKey < portfolioMenuItems.length - 1) {
@@ -71,7 +72,7 @@ function displayProject(name, github, link, role, tech, description, image) {
     document.getElementById("projectRole").textContent = role;
     document.getElementById("projectTech").textContent = tech;
     document.getElementById("projectDescription").textContent = description;
-    document.getElementById("projectImage").src = "/images/portfolio/" + image;
+    document.getElementById("projectImage").src = "images/portfolio/" + image;
 
     const projectGithub = document.getElementById("projectGithub");
     if (github.length <= 0) {
