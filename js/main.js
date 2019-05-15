@@ -7,7 +7,7 @@ const portfolioArrowForward = document.getElementById("portfolioArrowForward");
 const portfolioArrowBackward = document.getElementById(
     "portfolioArrowBackward"
 );
-let currentProjectKey = 0;
+var currentProjectKey = 0;
 
 //remove portfolio animation meant only for when landing on site
 setTimeout(function() {
@@ -25,7 +25,7 @@ portfolioBtn.addEventListener("click", function(e) {
     getProjectData(portfolioMenuItems[0]);
 });
 
-for (let key = 0; key < portfolioMenuItems.length; key++) {
+for (var key = 0; key < portfolioMenuItems.length; key++) {
     const elem = portfolioMenuItems[key];
     elem.dataset.key = key;
     elem.addEventListener("click", function() {
@@ -85,11 +85,12 @@ function displayProject(name, github, link, role, tech, description, image) {
     }
 }
 
-function selectedProjectUnderline(clickeElem) {
-    portfolioMenuItems.forEach(function(elem) {
+function selectedProjectUnderline(clickedElem) {
+    for (var i = 0; i < portfolioMenuItems.length; i++) {
+        const elem = portfolioMenuItems[i];
         elem.classList.remove("selected");
-    });
-    clickeElem.classList.add("selected");
+    }
+    clickedElem.classList.add("selected");
 }
 
 //About section logic
