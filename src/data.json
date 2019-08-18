@@ -1,7 +1,7 @@
 [
     {
         "name": "Kanban",
-        "tagline": "Kanban built with HTML5 drag and drop",
+        "tagline": "Kanban built with HTML5 drag & drop",
         "description": "This project is a Trello style kanban board using only the HTML5 drag and drop spec.",
         "tech": "React, HTML5, CSS",
         "role": "Front-End Engineer",
@@ -33,6 +33,17 @@
         "images": ["aegis.png"]
     },
     {
+        "name": "Baseframe",
+        "tagline": "Minimize development time & reduce CSS clutter",
+        "description": "Baseframe is an open source CSS library of the most commonly used CSS properties turned into easy to use pre-existing classes to help minimize development time and reduce CSS clutter.",
+        "tech": "SASS, CSS",
+        "role": "Creator",
+        "type": "Open Source",
+        "gitHub": "https://github.com/acekreations/baseframe",
+        "url": "",
+        "images": ["baseframe.png"]
+    },
+    {
         "name": "Order Maestro",
         "tagline": "Simple order management",
         "description": "A restaurant order management app designed specifically for use on tablets.",
@@ -42,17 +53,6 @@
         "gitHub": "https://github.com/acekreations/Order-Maestro",
         "url": "https://order-maestro-123.herokuapp.com/",
         "images": ["order-maestro.png"]
-    },
-    {
-        "name": "Crystal Miner",
-        "tagline": "A game of chance, memory, and math",
-        "description": "A game of chance, memory, and math.",
-        "tech": "HTML, CSS, Javascript/jQuery, Bootstrap",
-        "role": "Front-End Developer",
-        "type": "Personal",
-        "gitHub": "https://github.com/acekreations/Crystal-Miner",
-        "url": "https://acekreations.github.io/Crystal-Miner/",
-        "images": ["crystal-miner.png"]
     },
     {
         "name": "Startup News",
