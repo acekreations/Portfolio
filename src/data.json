@@ -1,5 +1,16 @@
 [
     {
+        "name": "Kanban",
+        "tagline": "Kanban built with HTML5 drag and drop",
+        "description": "This project is a Trello style kanban board using only the HTML5 drag and drop spec.",
+        "tech": "React, HTML5, CSS",
+        "role": "Front-End Engineer",
+        "type": "Personal",
+        "gitHub": "https://github.com/acekreations/kanban",
+        "url": "https://kanban-proj.netlify.com/",
+        "images": ["kanban.gif"]
+    },
+    {
         "name": "Newsallo",
         "tagline": "All your news in one feed",
         "description": "Newsallo is a platform that brings all of your favorite news sources into one beautiful and easy to read feed.",
@@ -42,17 +53,6 @@
         "gitHub": "https://github.com/acekreations/Crystal-Miner",
         "url": "https://acekreations.github.io/Crystal-Miner/",
         "images": ["crystal-miner.png"]
-    },
-    {
-        "name": "JukeLab",
-        "tagline": "Play music together",
-        "description": "Create a collaborative dynamic music playlist for your get together or party.",
-        "tech": "jQuery, UIkit, Firebase",
-        "role": "Front-End Developer, Designer",
-        "type": "Personal",
-        "gitHub": "https://github.com/aehaq/JukeLab",
-        "url": "https://aehaq.github.io/JukeLab/",
-        "images": ["jukelab.png"]
     },
     {
         "name": "Startup News",
