@@ -27,11 +27,12 @@ export default {
 
 <style>
 body {
-  background: #181818;
+  background: #fff;
 }
 
 ::selection {
-  background: #c898ff; /* WebKit/Blink Browsers */
+  background: #c898ff;
+  color: #fff;
 }
 
 h1,
@@ -41,8 +42,16 @@ h4,
 h5,
 p,
 a {
-  color: #eaeaea;
+  color: #000;
   font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+
+a {
+  font-size: 20px;
+}
+
+p {
   font-size: 17px;
 }
 
@@ -61,16 +70,11 @@ h5 {
 h1 {
   position: relative;
   display: inline-block;
-  padding: 20px 0 18px;
+  padding: 20px 0 4px;
   margin: 0;
+  width: 100%;
   overflow: hidden;
-}
-
-h1::after {
-  content: "====================================================================================================";
-  position: absolute;
-  bottom: 0px;
-  left: 0;
+  border-bottom: 4px solid #000;
 }
 
 h2 {
@@ -78,61 +82,44 @@ h2 {
   text-transform: capitalize;
 }
 
-h2::before {
-  content: "## ";
-}
-
 h3 {
-  margin: 5px 0px;
-  color: rgba(244, 244, 244, 0.5);
+  margin: 8px 0px 0px 0px;
 }
 
 h4 {
-  margin: 10px 0px 30px 0px;
-  color: rgba(244, 244, 244, 0.5);
-}
-
-h4::before {
-  content: url(assets/code.svg) " ";
+  margin: 8px 0px 30px 0px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 h5 {
   margin: 30px 0px 0px 0px;
-
+  border-top: 3px solid #000;
   position: relative;
   display: inline-block;
-  padding: 20px 0 18px;
+  width: 100%;
+  padding: 10px 0 18px;
   overflow: hidden;
 }
 
-h5::before {
-  content: "====================================================================================================";
-  position: absolute;
-  top: 0px;
-  left: 0;
-}
-
 nav a {
-  color: #ff9300;
+  color: #a75afe;
 }
 
 a {
   margin-right: 14px;
   text-decoration: none;
-  border-bottom: 1px solid #a75afe;
-}
-
-a::after {
-  content: " " url(assets/link.svg);
+  border-bottom: 2px solid #000;
 }
 
 a:hover {
   background: #a75afe;
+  color: #fff;
 }
 
 a:focus {
   outline: none;
   background: #a75afe;
+  color: #fff;
 }
 
 p {

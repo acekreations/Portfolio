@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageTitle title="Craig Melville" subTitle="Front-End Engineer" />
-    <h1>Portfolio</h1>
+    <!-- <h1>Portfolio</h1> -->
     <ProjectList v-bind:data="data" />
   </div>
 </template>
